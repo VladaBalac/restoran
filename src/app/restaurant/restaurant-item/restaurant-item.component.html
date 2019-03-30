@@ -1,0 +1,14 @@
+<b><a (click)="otvoriModal(restoran)"> {{restoran.name}}</a></b>
+<p>{{restoran.description}}</p>
+<p>Kuhinja: {{restoran.cuisine}}</p>
+<p>Ocena: <app-rating [grade]="restoran.rating"
+	[fullIcon]="'../assets/image/star-full.png'"
+	[emptyIcon]="'../assets/image/star-empty.png'"></app-rating> </p>
+
+	<p>Cena: <app-price [cena]="restoran.price"
+	[fullIcon]="'../assets/image/coin-full.png'"
+	[emptyIcon]="'../assets/image/coin-empty.png'"></app-price></p>
+<!-- <p>Cena: <app-price [cena]=restoran.price
+	[fullCena]="'../assets/image/coin-full.png'"
+	[emptyCena]="'../assets/image/coin-empty.png'"
+	></app-price></p> -->

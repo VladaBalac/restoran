@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="col-5">
+		<app-pagination [cousinNumber]="count" [cousinOnPage]="12" (sendPage)="refresh($event)"></app-pagination>
+	</div>
+	<div class="co-7">
+		<app-price></app-price>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col">
+		<app-restaurant-list [restoranList]="restaurant"></app-restaurant-list>
+	</div>
+</div>
+

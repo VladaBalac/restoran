@@ -1,0 +1,9 @@
+<img src="{{fullIcon}}">
+<img *ngIf="grade > 1" src="{{fullIcon}}">
+<img *ngIf="grade > 2" src="{{fullIcon}}">
+<img *ngIf="grade > 3" src="{{fullIcon}}">
+<img *ngIf="grade > 4" src="{{fullIcon}}">
+<img *ngIf="grade < 5" src="{{emptyIcon}}">
+<img *ngIf="grade < 4" src="{{emptyIcon}}">
+<img *ngIf="grade < 3" src="{{emptyIcon}}">
+<img *ngIf="grade < 2" src="{{emptyIcon}}">
